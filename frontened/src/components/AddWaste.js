@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 import './AddWaste.css'
+import UpdateWaste from './UpdateWaste';
 function AddWaste() {
     const [wastes, setWastes] = useState([]);
 
@@ -71,6 +73,7 @@ function AddWaste() {
                         <li>{item.Comp}</li>
                         <li>
                             <button onClick={() => deleteWaste(item._id)}>Delete</button>
+                           <Link to={"/update/"+item._id}>Update</Link>
                         </li>
                     </ul>
                 )) : <p>No waste items found.</p>

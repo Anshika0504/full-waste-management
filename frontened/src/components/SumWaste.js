@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './UpdateWaste.css';
 
+
 function SumWaste() {
     const [Name, setName] = useState("");
     const [Type, setType] = useState("");
@@ -22,10 +23,12 @@ function SumWaste() {
             headers: {
                 "Content-Type": "application/json"
             }
+            
         });
 
         result = await result.json();
         console.warn(result);
+       
 
         // Clear form and reset error state if needed
         if (result) {

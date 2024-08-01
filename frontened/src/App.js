@@ -4,6 +4,7 @@ import './App.css';
 import AddWaste from './components/AddWaste';
 import UpdateWaste from './components/UpdateWaste';
 import SumWaste from './components/SumWaste';
+import { ToastContainer} from 'react-toastify';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path="/update/:id"element={<UpdateWaste/>} ></Route>
     <Route path="/add"element={<SumWaste/>} ></Route>
   </Routes>
+  <ToastContainer/>
   </BrowserRouter>
   </>
   );

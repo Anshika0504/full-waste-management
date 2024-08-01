@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from "react-router-dom";
-import './AddWaste.css'
-import UpdateWaste from './UpdateWaste';
+import './AddWaste.css';
+
 function AddWaste() {
     const [wastes, setWastes] = useState([]);
 
@@ -12,7 +12,7 @@ function AddWaste() {
     const getWastes = async () => {
         try {
             let result = await fetch("http://localhost:8000/getAll", {
-                method: "get",
+                method: "GET",
             });
             result = await result.json();
             setWastes(result);
@@ -34,6 +34,7 @@ function AddWaste() {
             console.log('Error in deleting the waste from the list');
         }
     };
+
     const searchHandle = async (event) => {
         let key = event.target.value;
         if (key) {
@@ -61,8 +62,6 @@ function AddWaste() {
                 <li>Complain</li>
                 <li>Operations</li>
             </ul>
-            
-           
             {
                 wastes.length > 0 ? wastes.map((item, index) => (
                     <ul key={item._id}>
@@ -72,12 +71,14 @@ function AddWaste() {
                         <li>{item.Desc}</li>
                         <li>{item.Comp}</li>
                         <li>
-                            <button onClick={() => deleteWaste(item._id)}>Delete</button>
-                           <Link to={"/update/"+item._id}>Update</Link>
+                            <button className='link' onClick={() => deleteWaste(item._id)}>Delete</button>
+                            <Link className='link' to={"/update/" + item._id}>Update</Link>
                         </li>
                     </ul>
                 )) : <p>No waste items found.</p>
             }
+            <br></br>
+            <Link className='links' to={"/add"}>Add Complain</Link>
         </div>
     );
 }

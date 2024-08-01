@@ -1,7 +1,22 @@
 .product{
-    margin-left: 40%;
+    margin-left: 35%;
     margin-top:10%
 }
 .product h1{
     margin-left: 40px;
+}
+.product input{
+    padding: 20px;
+    outline: none;
+
+
+}
+.product button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 12px;
+    color: antiquewhite;
+    background-color: rgb(46, 120, 46);
+    margin-top: 5px;
 }

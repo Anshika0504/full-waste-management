@@ -1,15 +1,19 @@
+*{
+  background-color: rgb(74, 131, 74);
+}
+
 .inputbox{
     display: block;
     margin: 25px;
     padding: 7px;
     width: 300px;
-    border:1px solid skyblue
+    border:1px solid black;
   }
   .btn{
     margin: 25px;
     padding: 10px;
     width: 150px;
-    background-color: #61dafb;
+    background-color: rgb(57, 67, 41);
     color: #282c34;
     border: 1px solid black;
     cursor: pointer;
@@ -29,7 +33,7 @@
    }
    .waste-list ul li{
      display: inline-block;
-     border: 1px solid skyblue;
+     border: 1px solid rgb(57, 67, 41);
      padding: 15px;
      width: 150px;
      margin-top: 10px;
@@ -41,9 +45,31 @@
     width:400px;
     height:40px;
     padding-left: 20px;
-    border: 1px solid skyblue;
+    border: 1px solid rgba(56,67,41);
+    color: black;
     margin-bottom: 10px;
     margin-top: 10px;
   }
+  .link{
+    text-decoration: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(47, 113, 47);
+    color: #282c34;
+    margin-left: 15px;
+    height: 23px;
+  }
+.links{
+  text-decoration: none;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color:rgba(47,113,47);
+  color: #282c34;
+  padding: 3px;
+  margin-top: 120px;
+  gap:12px;
+
+
+}
 
   

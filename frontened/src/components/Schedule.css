@@ -1,0 +1,14 @@
+.schedule{
+    margin-top: 130px;
+}
+.schedule h1{
+    margin-left: 580px;
+}
+.table1{
+    display: inline-block;
+    border: 1px solid rgb(57, 67, 41);
+    padding: 15px;
+    width: 150px;
+    margin-top: 10px;
+    
+}

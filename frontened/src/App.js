@@ -7,6 +7,8 @@ import SumWaste from './components/SumWaste';
 import { ToastContainer} from 'react-toastify';
 import Navbar from './components/Navbar';
 import Schedule from './components/Schedule';
+import UpdateSchedule from './components/UpdateSchedule';
+import SumSchedule from './components/SumSchedule';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
     <Route path="/update/:id"element={<UpdateWaste/>} ></Route>
     <Route path="/add"element={<SumWaste/>} ></Route>
     <Route path="/schedule" element={<Schedule/>}></Route>
+    <Route path="/updatesch/:id" element={<UpdateSchedule/>}></Route>
+    <Route path="/addSchedule" element={<SumSchedule/>}></Route>
   </Routes>
   <ToastContainer/>
   

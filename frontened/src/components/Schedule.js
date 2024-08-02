@@ -22,7 +22,7 @@ function Schedule() {
 
   const deleteSchedule = async (id) => {
       try {
-          let result = await fetch(`http://localhost:4000/delete/${id}`, {
+          let result = await fetch(`http://localhost:4000/deletesch/${id}`, {
               method: "DELETE",
           });
           result = await result.json();
@@ -71,13 +71,13 @@ function Schedule() {
                       <li>{item.Timings}</li>
                       <li>
                           <button className='link' onClick={() => deleteSchedule(item._id)}>Delete</button>
-                          <Link className='link' to={"/update/" + item._id}>Update</Link>
+                          <Link className='link' to={"/updatesch/" + item._id}>Update</Link>
                       </li>
                   </ul>
               )) : <p>No Schedule found.</p>
           }
           <br></br>
-          <Link className='links' to={"/add"}>Add Schedule</Link>
+          <Link className='links' to={"/addSchedule"}>Add Schedule</Link>
       </div>
   );
 }

@@ -50,7 +50,7 @@ app.get("/getonesch/:id", async (req, resp) => {
         resp.status(500).json({ error: "some error has been occurred" });
     }
 });
-app.put("/update/:id", async (req, resp) => {
+app.put("/updatesch/:id", async (req, resp) => {
     try {
         const id = req.params.id;
         const schExist = await schedule.findById(id);
@@ -75,7 +75,7 @@ app.get("/search/:key",async(req,resp)=>{
     });
     resp.send(result)
 })
-app.delete("/delete/:id",async(req,resp)=>{
+app.delete("/deletesch/:id",async(req,resp)=>{
     try{
         const id=req.params.id;
         const schExist=await schedule.findById(id);

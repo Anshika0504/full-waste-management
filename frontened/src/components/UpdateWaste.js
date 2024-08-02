@@ -52,6 +52,7 @@ function UpdateWaste() {
                 <input type="text" value={Desc} placeholder='Enter Some Description' className='inputbox' onChange={(e) => setDesc(e.target.value)} />
                 <input type="text" value={Comp} placeholder='Enter The Area Of Complain' className='inputbox' onChange={(e) => setComp(e.target.value)} />
                 <button className='btn' onClick={updateWaste}>Update Waste</button>
+      
             </div>
         </div>
     );

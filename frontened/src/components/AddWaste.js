@@ -71,14 +71,19 @@ function AddWaste() {
                         <li>{item.Desc}</li>
                         <li>{item.Comp}</li>
                         <li>
+                            <div className='btns'>
                             <button className='link' onClick={() => deleteWaste(item._id)}>Delete</button>
                             <Link className='link' to={"/update/" + item._id}>Update</Link>
+                            </div>
+                           
                         </li>
                     </ul>
                 )) : <p>No waste items found.</p>
             }
             <br></br>
+            
             <Link className='links' to={"/add"}>Add Complain</Link>
+            <img className='gif' src="https://imgs.search.brave.com/G1mhaUrJt5WqwJZTpq1h0xhpvLNp28PB86I8ZRQOJWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YW5pbWF0ZWRpbWFn/ZXMub3JnL2RhdGEv/bWVkaWEvNTc2L2Fu/aW1hdGVkLWdhcmJh/Z2UtYmluLWltYWdl/LTAwMDUuZ2lm.gif" alt="dustbin-gif"></img>
         </div>
     );
 }

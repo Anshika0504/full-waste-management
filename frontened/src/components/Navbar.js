@@ -5,7 +5,7 @@ function Navbar() {
    
   return (
     <div>
-    <img className='logo' src="https://imgs.search.brave.com/_bWH5cqiunFsYFcKAO9TAAtxk_l1pxedXABhXGKzKbs/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTA4/MzQ3NTIxL3Bob3Rv/L3dlLWFyZS10aGUt/d29ybGQud2VicD9i/PTEmcz0xNzA2Njdh/Jnc9MCZrPTIwJmM9/U2l0NVdsRVlzNi1H/VE9kc2tIbDIwY3hm/SUk0YTluR3hlWG1M/b0w5bFYtcz0" alt='logo'></img>
+    <img className='logo' src="https://imgs.search.brave.com/7J6pqzFdHsAuRIPKyYhsE6M_cECerZ2sXII7rdU_IkA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNzU0/MDYxODQvcGhvdG8v/cnViYmlzaC1pbi1h/LWJpbi5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9X2U5bWJ1/Yjh4b2k1OTdGWWFR/RzhuY29JLW15R3oz/TE1jQlhXQmozc3Z1/OD0" alt='logo'></img>
     <ul className='nav-ul'>
         <li>
             <Link to="/">Waste List</Link>
@@ -18,6 +18,9 @@ function Navbar() {
         </li>
         <li>
             <Link to="/schedule">Schedule</Link>
+        </li>
+        <li>
+            <Link to="/">Login</Link>
         </li>
     </ul>
       

@@ -70,8 +70,10 @@ function Schedule() {
                       <li>{item.WorkerId}</li>
                       <li>{item.Timings}</li>
                       <li>
+                          <div className='btns'>
                           <button className='link' onClick={() => deleteSchedule(item._id)}>Delete</button>
                           <Link className='link' to={"/updatesch/" + item._id}>Update</Link>
+                          </div>
                       </li>
                   </ul>
               )) : <p>No Schedule found.</p>

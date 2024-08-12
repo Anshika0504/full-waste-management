@@ -10,7 +10,7 @@ function Schedule() {
 
   const getSchedule = async () => {
       try {
-          let result = await fetch("http://localhost:4000/getAllsch", {
+          let result = await fetch("http://localhost:8000/getAllsch", {
               method: "GET",
           });
           result = await result.json();
@@ -22,7 +22,7 @@ function Schedule() {
 
   const deleteSchedule = async (id) => {
       try {
-          let result = await fetch(`http://localhost:4000/deletesch/${id}`, {
+          let result = await fetch(`http://localhost:8000/deletesch/${id}`, {
               method: "DELETE",
           });
           result = await result.json();
@@ -38,7 +38,7 @@ function Schedule() {
       let key = event.target.value;
       if (key) {
           try {
-              let result = await fetch(`http://localhost:4000/search/${key}`);
+              let result = await fetch(`http://localhost:8000/search/${key}`);
               result = await result.json();
               setSchedule(result);
           } catch (error) {

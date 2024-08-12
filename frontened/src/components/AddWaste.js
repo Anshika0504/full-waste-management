@@ -52,7 +52,7 @@ function AddWaste() {
 
     return (
         <div className='waste-list'>
-            <h1>Waste List</h1>
+            <h1 className='hwaste'>Waste List</h1>
             <input className="search" type="text" placeholder='Search Product' onChange={searchHandle} />
             <ul className='waste'>
                 <li className='waste'>S.No</li>

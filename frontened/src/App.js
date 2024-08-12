@@ -9,6 +9,8 @@ import Navbar from './components/Navbar';
 import Schedule from './components/Schedule';
 import UpdateSchedule from './components/UpdateSchedule';
 import SumSchedule from './components/SumSchedule';
+import Frontpage from './components/Frontpage';
+import Feedback from './components/Feedback';
 
 
 function App() {
@@ -18,12 +20,14 @@ function App() {
   <BrowserRouter>
   <Navbar/>
   <Routes>
-    <Route path="/"element={<AddWaste/>} ></Route>
+    <Route path="/" element={<Frontpage/>}></Route>
+    <Route path="/addwaste"element={<AddWaste/>} ></Route>
     <Route path="/update/:id"element={<UpdateWaste/>} ></Route>
     <Route path="/add"element={<SumWaste/>} ></Route>
     <Route path="/schedule" element={<Schedule/>}></Route>
     <Route path="/updatesch/:id" element={<UpdateSchedule/>}></Route>
     <Route path="/addSchedule" element={<SumSchedule/>}></Route>
+    <Route path="/feedback" element={<Feedback/>}></Route>
   </Routes>
   <ToastContainer/>
   

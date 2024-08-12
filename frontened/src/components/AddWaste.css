@@ -1,3 +1,9 @@
+.hwaste{
+  font-size: 50px;
+  font-style: italic;
+  font-weight: 600;
+}
+
 .inputbox{
     display: block;
     margin: 25px;

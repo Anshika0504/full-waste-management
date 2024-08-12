@@ -1,0 +1,30 @@
+.fhead{
+    font-size:80px;
+    font-style: italic;
+    margin-left: 80px;
+    margin-top: -640px;
+}
+.fbtn{
+    background-color:green;
+    box-sizing: border-box;
+    border: 0 solid #e5e7eb;
+    margin-left: 100px;
+    margin-top: 50px;
+    border-radius: 5px;
+    height: 40px;
+    width: 220px;
+}
+button:hover{
+    border-radius: 6px;
+    height: 50px;
+    width: 230px;
+}
+.farrow{
+   height: 10px;
+}
+.fback{
+    margin-left: 430px;
+    z-index: -1;
+
+}
+

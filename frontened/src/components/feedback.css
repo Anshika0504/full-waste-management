@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+}
+.hfeed{
+    margin-top: 12px;
+    margin-left: 120px;
+}
+.left{
+    display: inline;
+    margin-top: 80px;
+    margin-left: 300px;
+}
+.in{
+    background-color: ghostwhite;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 12px;
+    width: 400px;
+    border: none;
+    border-radius: 10px;
+}
+.feedimg{
+    height: 500px;
+    margin-left: 50px;
+}
+.btnfeed{
+    margin-top:20px;
+    height: 40px;
+    width: 80px;
+    border-radius: 12px;
+    border: none;
+    background-color: aliceblue;
+    margin-left: 120px;
+    
+}

@@ -17,7 +17,7 @@ function SumWaste() {
             return false;
         }
 
-        let result = await fetch("http://localhost:8000/create", {
+        let result = await fetch("http://localhost:4000/create", {
             method: "POST",
             body: JSON.stringify({ Name, Type, Desc, Comp }),
             headers: {

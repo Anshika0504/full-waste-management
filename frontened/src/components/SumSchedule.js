@@ -16,7 +16,7 @@ function SumSchedule() {
                 return false;
             }
     
-            let result = await fetch("http://localhost:4000/createsch", {
+            let result = await fetch("http://localhost:8000/createsch", {
                 method: "POST",
                 body: JSON.stringify({ HouseNo,WorkerId,WorkerName,Timings }),
                 headers: {

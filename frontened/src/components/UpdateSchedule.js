@@ -28,7 +28,7 @@ function UpdateSchedule() {
 
     const updateSch = async () => {
         try {
-            let result = await fetch(`http://localhost:4000/updatesch/${params.id}`, {
+            let result = await fetch(`http://localhost:8000/updatesch/${params.id}`, {
                 method: "PUT",
                 body: JSON.stringify({ HouseNo,WorkerId,WorkerName,Timings}),
                 headers: {

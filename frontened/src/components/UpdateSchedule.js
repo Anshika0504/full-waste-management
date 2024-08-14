@@ -43,7 +43,7 @@ function UpdateSchedule() {
     };
 
     return (
-        <div>
+        <div className='main'>
             <div className="product">
                 <h1>Update Schedule</h1>
                 <input type="text" value={HouseNo} placeholder='Enter The HouseNo' className='inputbox' onChange={(e) => setHouseNo(e.target.value)} />
@@ -52,6 +52,7 @@ function UpdateSchedule() {
                 <input type="text" value={Timings} placeholder='Enter The Timings' className='inputbox' onChange={(e) => setTimings(e.target.value)} />
                 <button className='btn' onClick={updateSch}>Update Waste</button>
             </div>
+           
         </div>
     );
 }

@@ -51,7 +51,9 @@ function AddWaste() {
     };
 
     return (
-        <div className='waste-list'>
+        <>
+        <div className='main'>
+                    <div className='waste-list'>
             <h1 className='hwaste'>Waste List</h1>
             <input className="search" type="text" placeholder='Search Product' onChange={searchHandle} />
             <ul className='waste'>
@@ -81,10 +83,15 @@ function AddWaste() {
                 )) : <p>No waste items found.</p>
             }
             <br></br>
-            
             <Link className='links' to={"/add"}>Add Complain</Link>
-            <img className='gif' src="https://imgs.search.brave.com/G1mhaUrJt5WqwJZTpq1h0xhpvLNp28PB86I8ZRQOJWY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/YW5pbWF0ZWRpbWFn/ZXMub3JnL2RhdGEv/bWVkaWEvNTc2L2Fu/aW1hdGVkLWdhcmJh/Z2UtYmluLWltYWdl/LTAwMDUuZ2lm.gif" alt="dustbin-gif"></img>
         </div>
+        </div>
+        <div className='left'>
+            <img className="right" src="https://imgs.search.brave.com/TlPy7I3wYSEj5VzEnCalLmxhmAKnsXjDGp-DpMpLS70/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/dmVjdG9yc3RvY2su/Y29tL2kvcHJldmll/dy0xeC81Ny80Mi93/YXN0ZS1yZWN5Y2xp/bmctY29uY2VwdC12/ZWN0b3ItMzU3NzU3/NDIuanBn"></img>
+        </div>
+            </>
+        
+
     );
 }
 

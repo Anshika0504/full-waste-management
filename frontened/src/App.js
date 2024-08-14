@@ -11,6 +11,7 @@ import UpdateSchedule from './components/UpdateSchedule';
 import SumSchedule from './components/SumSchedule';
 import Frontpage from './components/Frontpage';
 import Feedback from './components/Feedback';
+import Map from './components/Map';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
     <Route path="/updatesch/:id" element={<UpdateSchedule/>}></Route>
     <Route path="/addSchedule" element={<SumSchedule/>}></Route>
     <Route path="/feedback" element={<Feedback/>}></Route>
+    <Route path="/Map" element={<Map/>}></Route>
   </Routes>
   <ToastContainer/>
   

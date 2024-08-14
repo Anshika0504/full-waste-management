@@ -1,0 +1,21 @@
+#address{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+.responsive{
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 30%;
+    position: relative;
+
+}
+.responsive iframe{
+    border: 0;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+}

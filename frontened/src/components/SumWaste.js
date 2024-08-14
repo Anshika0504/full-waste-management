@@ -42,7 +42,8 @@ function SumWaste() {
     };
 
     return (
-        <div>
+        <>
+                <div className='main'>
             <div className="product">
                 <h1>Add Waste In The List</h1>
                 <input
@@ -78,10 +79,12 @@ function SumWaste() {
                 />
                 {error && !Comp && <span className='invalid-input'>Enter Valid Complain Area</span>}
                 <button className='btn' onClick={addWaste}>Add Waste</button>
-                <img className='gif'src="https://imgs.search.brave.com/p-SeEOG6fdRJrfSbJaBmzauUcfrVLLvzqTtmyTYV-cg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTEuZ2lwaHkuY29t/L21lZGlhL0RoOFVM/T3FtVnhIR29HU3Jr/dS9naXBoeS5naWY_/Y2lkPTc5MGI3NjEx/bmNjcWxnOXFzb2U2/MHRsaWE0enhwbjVq/dnZzbDh2NGF3bHgx/dWVhNiZlcD12MV9n/aWZzX3NlYXJjaCZy/aWQ9Z2lwaHkuZ2lm/JmN0PWc.gif" alt="gif"></img>
+                
 
             </div>
-        </div>
+           
+        </div></>
+
     );
 }
 

@@ -1,6 +1,10 @@
+.main{
+    display: flex;
+}
 .product{
     margin-left: 35%;
-    margin-top:5%
+    margin-top:5%;
+
 }
 .product h1{
     margin-left: -25px;
@@ -23,4 +27,8 @@
     color: antiquewhite;
     background-color: rgb(46, 120, 46);
     margin-top: 5px;
+}
+.imgsum{
+    height: 1000px;
+margin-left: -30px;
 }

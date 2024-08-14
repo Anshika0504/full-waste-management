@@ -25,6 +25,9 @@ function Navbar() {
         <li>
             <Link to="/feedback">Feedback</Link>
         </li>
+        <li>
+            <Link to="/Map">Locations</Link>
+        </li>
     </ul>
       
     </div>

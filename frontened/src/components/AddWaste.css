@@ -32,6 +32,7 @@
   .waste-list{
     text-align: center;
      margin-top:50px;
+     margin-left: 120px;
    }
    .waste-list ul li{
      display: inline-block;
@@ -39,7 +40,7 @@
      padding: 15px;
      width: 150px;
      margin-top: 10px;
-     background-color:seashell;
+
      font-weight: 500;
    }
    .waste-list ul{
@@ -65,7 +66,6 @@
   }
 .links{
   text-decoration: none;
-  border: 1px solid black;
   border-radius: 3px;
   margin-left: 120px;
   color: #282c34;
@@ -73,13 +73,14 @@
   margin-top: 120px;
   gap:12px;
   font-weight: 500;
+  height: 10px;
+  width: 50px;
 
 
 }
 .gif{
-  height: 200px;
-  width: 200px;
-  background-color:antiquewhite ;
+  height: 300px;
+  width: 300px;
   border-radius: 30px;
   margin-left: 1150px;
   margin-top: -500px;
@@ -88,4 +89,13 @@
   display: flex;
   margin-left: -5px;
 }
-  
+.main{
+  display: flex;
+}
+.right{
+  margin-left: 40px;
+}
+.right{
+  margin-top: -450px;
+  margin-left: 850px;
+}
